@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Forum;
+}
+
+.hero{
+    height: 100vh;
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0, 0, 0,0.7)),url('hero2.jpg');
+
+    background-size: cover;
+    background-position: center;
+    height: 950px;
+    background-attachment: fixed;
+
+}
+.hero img{
+    height: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
+    
+}
+
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+
+    font-size: 20px;
+
+}
+
+nav ul li a:hover{
+   
+    transition: .3s;
+}
+
+
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black; /* Set the background color to black */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    color: white; /* Set the text color to white */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Additional styling for dropdown items */
+  .dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Optional: Add a border between items */
+  }
+  
+  .dropdown-menu li:last-child {
+    border-bottom: none; /* Remove border from the last item */
+  }
+  
+
+
+#hero-container{
+    padding: 20px;
+}
+
+#hero-container h4,#hero-container h1,
+#hero-container p{
+    color: white;
+    
+
+}
+#hero-button{
+    background-color: white;
+    color: black;
+    border: white;
+    padding: 10px;
+    padding-left:20px ;
+    padding-right: 20px;
+    border-radius: 10px;
+
+}
+ #hero-contents {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+    background: rgba(69, 68, 68, 0.3);
+}
+
+.about-section{
+background-color: #EFECE2;
+padding-top: 50px;
+padding-bottom: 100px;
+}
+.about-section img{
+    height: 200px;
+    border-radius: 150px;
+
+}
+
+.services{
+    background-color: black;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  
+
+}
+
+
+#secondServicesCol{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(201, 172, 24, 0.2)),url('servicespotraits.jpg');
+    height: 400px;
+    padding: 90px;
+   
+}
+#firstServicesCol{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0,0.2)),url('servicesvid.webp');
+    height: 400px;
+    padding: 90px;
+    
+   
+}
+.portfolio-section{
+    background-color: #EFECE2;
+    padding: 50px;
+}
+
+.glass-effect {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.glass-effect:hover {
+    transform: scale(1.08);
+}
+.glass-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+   height: 500px;
+    background: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+.reviews-section{
+    background-color: #191919;
+    color: white;
+    padding-top: 50px;
+}
+
+#client-name{
+    font-family:'Dancing Script' ;
+}
+
+.reviews-section .col{
+    margin: 15px;
+    padding: 30px;
+    background-color: black;
+    border-radius: 20px;
+    
+}
+#client-image{
+    height: 90px;
+    border-radius: 50px;
+    border: 2px solid white;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+#other-nav{
+    height: 120px;
+    width: 100%;
+
+   background-color: black;
+
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 10px;
+
+    background-attachment: fixed;
+
+}
+#other-nav img{
+    height: 100px;
+}
+
+
+.input-testimonials{
+    background-color: #EFECE2;
+    padding: 20px;
+}
+
+
+#testimonial-form-button{
+    background-color: black;
+    color: white;
+   border: 1px solid black;
+border-radius: 7px;
+    padding: 6px;
+}
+
+
+
+
+/* ABOUT PAGE */
+
+.ABOUT-info {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url('about-info.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    color: white;
+    padding-top: 100px;
+}
+
+#about-info-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75); /* Optional: Add a semi-transparent white overlay */
+    padding: 50px; /* Adjust padding as needed */
+}
+
+
+
+.our-studio{
+    background-color: #EFECE2;
+}
+
+.our-team{
+    background-color:#191919;
+    color: white;
+}
+
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+}
+
+/* Ensure images are responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Additional responsive styles can be added within media queries */
+
+
+
+#servicesRow {
+    margin-top: 30%;
+}
+
+#firstServicesCol,
+#secondServicesCol {
+    position: relative;
+    padding: 20px;
+}
+
+#firstServicesCol h3,
+#secondServicesCol h3,
+#firstServicesCol p,
+#secondServicesCol p {
+    position: relative;
+    z-index: 1;
+}
+
+#firstServicesCol::before,
+#secondServicesCol::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity as needed */
+    z-index: -1;
+}
