@@ -4,91 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+
+
+    
 
 
     <title>Document</title>
     <link rel="stylesheet" href="landing.css">
+    <style>
+         .navbar {
+            background-color: transparent !important;
+        }
+        .navbar-nav {
+            margin: auto;
+            display: flex;
+            gap: 20px; 
+        }
+        .nav-item {
+            padding: 0 10px;
+        }
+    </style>
     
    
 </head>
 <body>
     <!-- HERO SECTION -->
-<div class="hero">
+
+  <div class="hero">
     <!-- NAVBAR SECTION -->
-    <nav>
-      <img src="logo.png" alt="">
-      <ul>
-        <li><a href="landing.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="serviecs.html">Services</a></li>
-    
-        <li class="dropdown">
-          <a href="portfolio.html">Portfolio</a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Portrait</a></li>
-            <li><a href="#">Family</a></li>
-            <li><a href="#">Maternity</a></li>
-            <li><a href="#">Commercial</a></li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="logo.png" alt="" style="height: 100px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav justify-content-center"> <!-- Added justify-content-center class for center alignment -->
+            <li class="nav-item">
+              <a class="nav-link" href="landing.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.html">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inquire.html">Inquire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </li>
-    
-        <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="inquire.html">Inquire</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-
-      <!-- SOCIAL MEDIA ICON -->
-
-      <div class="social-icon">
-
-
+        </div>
       </div>
-
     </nav>
+    
+    
+
+
+
+
+
 
     <!-- HERO CONTENTS -->
   
-    <div class="container my-2" id="hero-container">
+    <div class="container my-2 p-5" id="hero-container">
       <div class="row">
-        <div class="col col-xs-12  " id="hero-contents">
+        <div class="col-md-6 col-sm-6 col-xs-12  " id="hero-contents">
           <h4>Lorem ipsum dolor sit amet consectetur.</h4>
           <h1>Lorem, ipsum.</h1>
           <p >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi provident odio fugit voluptatem ullam itaque laborum eveniet dolor? Assumenda enim delectus ut veniam itaque deleniti.</p>
-          <button class="my-4" id="hero-button">click</button>
+          <a href="inquire.html"><button type="button" class="btn btn-outline-light">Inquire now</button></a>
         </div>
         <div class="col"></div>
       </div>
     </div>
-  </div>
+  </div> 
+
 
 <!-- ABOUT SECTION -->
 
 <section class="about-section">
-    <div class="container  text-center">
-        <img class="my-5" src="about.jpg" alt="">
-        <h1 class="my-3">All About Katha</h1>
+    <div class="container  text-center p-5">
+        <img class="my-2" src="about.jpg" alt="">
+        <h1 class="my-2">All About Katha</h1>
         <p>As an experienced Wedding Photography Studio, we’ve photographed a wide variety of events, all in search of that special moment. The perfect day begins with you; your originality, taste, and style inspire everything we do. We will be illustrating your love story through our lenses, providing you with a collection of images that look and feel as authentic as your love. Feel free to get in touch to schedule a consultation and learn more.</p>
-
+     <a href="about.html">   <button type="button" class="btn btn-outline-dark">Learn more</button></a>
     </div>
 </section>
 
 <!-- SERVICES SECTION -->
 
 <section class="services">
-  <div class="container ">
-    <div class="first-part text-center ">
-    <h1>OUR SERVICES</h1>
-    <p class="my-5">As an exclusive, fully equipped Wedding Photography Studio, Katha has the privilege in offering clients a variety of diverse services for their happy day. As modern life becomes increasingly technologically advanced, we research new trends and modern advancements in the photography field necessary for giving the happy couple a modern edge for their shoot. Check out the list of services we can offer our clients below or get in touch for more information.</p>
+  <div class="container p-5">
+    <div class="first-part text-center">
+      <h1>OUR SERVICES</h1>
+      <p class="my-3">As an exclusive, fully equipped Wedding Photography Studio, Katha has the privilege in offering clients a variety of diverse services for their happy day. </p>
     </div>
-    <div class="row my-5" id="servicesRow" >
-        <div class="col" id="firstServicesCol">
-            <h3>Wedding Video</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae nostrum, delectus voluptatem porro molestiae impedit, dolorem expedita nobis soluta tenetur. Maiores magni sed velit at nulla laborum cum consequuntur reiciendis necessitatibus repellat dolorem repudiandae corporis harum consectetur totam dolor, aliquam praesentium impedit! Minus illum ducimus, ipsa itaque quae facilis?</p>
-        </div>
-        <div class="col" id="secondServicesCol">
-            <h3>Wedding potraits</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate deleniti, ducimus recusandae vitae itaque explicabo quia! Quibusdam sit nulla maxime magnam eligendi ut similique mollitia labore, deserunt nisi, ipsam repudiandae blanditiis optio cum fuga rem nobis dolore iusto aperiam obcaecati. Inventore odit nisi eaque veritatis maxime, cumque perspiciatis porro.</p>
-        </div>
+    <div class="row my-5" id="servicesRow">
+      <div class="col-md-6 col-sm-6 col-xs-12 p-5" id="firstServicesCol">
+        <h3>Wedding Video</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi beatae nostrum, delectus voluptatem porro molestiae impedit, dolorem expedita nobis soluta tenetur. Maiores magni sed velit at nulla laborum cum consequuntur reiciendis necessitatibus repellat dolorem repudiandae corporis harum consectetur totam dolor, aliquam praesentium impedit! Minus illum ducimus, ipsa itaque quae facilis?</p>
+      </div>
+      <div class="col-md-6 col-sm-6 col-xs-12 p-5" id="secondServicesCol">
+        <h3>Wedding Portraits</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptate deleniti, ducimus recusandae vitae itaque explicabo quia! Quibusdam sit nulla maxime magnam eligendi ut similique mollitia labore, deserunt nisi, ipsam repudiandae blanditiis optio cum fuga rem nobis dolore iusto aperiam obcaecati. Inventore odit nisi eaque veritatis maxime, cumque perspiciatis porro.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -96,39 +127,62 @@
 
 
 
-<!-- PORTFOLIO SECTION -->
 
-<section class="portfolio-section">
-    <div class="container text-center">
+ <div class="container my-5 text-center">
+
+  <h1 class="text-center">
+    PORTFOLIO
+  </h1>
+
+  <div class="conteudo my-5">
+    <div class="carousel">
+      <img src="potrait1.jpg" alt="" id="slider-img">
+      <img src="potrait2.jpg" alt="" id="slider-img">
+      <img src="portrait3.jpg" alt="" id="slider-img">
+      
+      <img src="potrait4.jpg" alt="" id="slider-img">
+      <img src="potrait5.jpg" alt="" id="slider-img">
+      <img src="potrait6.jpg" alt="" id="slider-img">
+     
+    
+    </div>
+    
+  </div>
+  <a  class="text-center" href="portfolio.html">   <button type="button" class="btn btn-outline-dark">See more</button></a>
+</div>
+
+<!-- PORTFOLIO SECTION --> 
+ <!-- <section class="portfolio-section">
+    <div class="container text-center p-5">
 
         <h1>PORTFOLIO</h1>
 
         <div class="row py-5">
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="potrait1.jpg" alt="" height="500px" onclick="openModal('potrait1.jpg')">
             </div>
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="potrait2.jpg" alt="" height="500px" onclick="openModal('potrait2.jpg')">
             </div>
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="portrait3.jpg" alt="" height="500px" onclick="openModal('portrait3.jpg')">
             </div>
         </div>
 
         <div class="row py-2">
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="potrait4.jpg" alt="" height="500px" onclick="openModal('potrait4.jpg')">
             </div>
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="potrait6.jpg" alt="" height="500px" onclick="openModal('potrait6.jpg')">
             </div>
-            <div class="col glass-effect">
+            <div class="col-md-4 glass-effect">
                 <img src="potrait5.jpg" alt="" height="500px" onclick="openModal('potrait5.jpg')">
             </div>
-        </div>
+        </div>    -->
 
         <!-- MODAL -->
-        <div class="modal" id="imageModal" tabindex="-1" role="dialog">
+        <!-- <div class="modal" id="imageModal" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -140,36 +194,54 @@
 
     </div>
     
-</section>
+</section>   -->
  <!-- REVIEWS SECTION -->
-
 <section class="reviews-section">
-    <div class="container text-center ">
-        <H1>Our Reviews</H1>
-
-        <div class="row py-5">
-            <div class="col">
-                <img src="client-image1.jpg" id="client-image" alt="">
-               <p class="my-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt, inventore iure quidem facere pariatur? Dolore, molestias maxime? Minima quod hic mollitia nulla! Commodi necessitatibus accusamus nostrum neque suscipit aperiam laboriosam cumque impedit error voluptatum!"</p>
-               <h5 id="client-name">Megan Kanauje</h5>
-            </div>
-            <div class="col">
-                <img src="client-image2.jpg.webp" id="client-image" alt="">
-                <p class="my-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt, inventore iure quidem facere pariatur? Dolore, molestias maxime? Minima quod hic mollitia nulla! Commodi necessitatibus accusamus nostrum neque suscipit aperiam laboriosam cumque impedit error voluptatum!"</p>
-                <h5 id="client-name">Megan Kanauje</h5>
-
-            </div>
-            <div class="col">
-                <img src="client-image.png.jpeg" id="client-image" alt="">
-                <p class="my-3">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus incidunt, inventore iure quidem facere pariatur? Dolore, molestias maxime? Minima quod hic mollitia nulla! Commodi necessitatibus accusamus nostrum neque suscipit aperiam laboriosam cumque impedit error voluptatum!"</p>
-                <h5 id="client-name">Megan Kanauje</h5>
-
-            </div>
-        </div>
-
-
-    </div>
+<!-- TESTIMONIAL SECTION -->
+<section id="testimonials" class="bg-dark py-3">
+  <div class="container">
+      <h1 class="text-center mb-5 text-white">TESTIMONIALS</h1>
+      <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="card bg-black text-white">
+                  <img src="client-image.png.jpeg" class="card-img-top rounded-circle mx-auto mt-3 border border-white" style="width: 100px; height: 100px;" alt="Reviewer 1">
+                  <div class="card-body p-4">
+                      <p class="card-text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget turpis et tellus gravida congue at sit amet nisl."</p>
+                      <h5 class="card-title">John Doe</h5>
+                   
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card bg-black text-white">
+                  <img src="client-image1.jpg" class="card-img-top rounded-circle mx-auto mt-3 border border-white" style="width: 100px; height: 100px;" alt="Reviewer 2">
+                  <div class="card-body p-4">
+                      <p class="card-text">"Sed quis purus vel risus sollicitudin tempor. Morbi tempor tortor et fermentum viverra. Etiam et finibus velit."</p>
+                      <h5 class="card-title">Jane Smith</h5>
+               
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card bg-black text-white">
+                  <img src="client-image2.jpg.webp" class="card-img-top rounded-circle mx-auto mt-3 border border-white" style="width: 100px; height: 100px;" alt="Reviewer 3">
+                  <div class="card-body p-4">
+                      <p class="card-text">"Vestibulum tincidunt sapien eget mi pellentesque, sed vehicula ipsum feugiat. Integer eget erat ac urna rhoncus ultricies."</p>
+                      <h5 class="card-title">Michael Johnson</h5>
+                   
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
 </section>
+
+
+</section>
+
+
+
+
 
 
 
@@ -179,35 +251,24 @@
         <p class="my-5">©2024 by katha,created by Megan Kanauje Magar</p>
     </div>
 </section>
-<script>
-    function openModal(imageSrc) {
- 
-        document.getElementById('modalImage').src = imageSrc;
 
-      
-        $('#imageModal').modal('show');
-    }
+
+  
+
+  
+<script src="script.js">
+
 </script>
 
-  
 
-  
-<script>
-    function openModal(imageSrc) {
-  
-        document.getElementById('modalImage').src = imageSrc;
-
-        
-        $('#imageModal').modal('show');
-    }
-</script>
 
 
     
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
    
 </body>
 </html>

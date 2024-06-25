@@ -3,7 +3,29 @@
     margin: 0;
     box-sizing: border-box;
     font-family:Forum;
+    width: auto;
 }
+
+
+
+
+.navbar {
+    background-color: black !important;
+}
+.navbar-nav {
+    margin: auto;
+    display: flex;
+    gap: 20px; /* Adjust the margin between list items here */
+}
+.nav-item {
+    padding: 0 10px;
+    
+
+}
+
+
+
+
 
 .hero{
     height: 100vh;
@@ -14,12 +36,16 @@
     background-size: cover;
     background-position: center;
     height: 950px;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
 .hero img{
     height: 100px;
-}
+}  
+
+
+
+
 nav{
     display: flex;
     align-items: center;
@@ -52,30 +78,7 @@ nav ul li a:hover{
 
 
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: black; /* Set the background color to black */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    color: white; /* Set the text color to white */
-  }
-  
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Additional styling for dropdown items */
-  .dropdown-menu li {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd; /* Optional: Add a border between items */
-  }
-  
-  .dropdown-menu li:last-child {
-    border-bottom: none; /* Remove border from the last item */
-  }
-  
+
 
 
 #hero-container{
@@ -99,28 +102,28 @@ nav ul li a:hover{
 
 }
  #hero-contents {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     padding-left: 50px;
     background: rgba(69, 68, 68, 0.3);
 }
 
 .about-section{
 background-color: #EFECE2;
-padding-top: 50px;
-padding-bottom: 100px;
+padding-top: 10px;
+padding-bottom: 10px;
 }
 .about-section img{
-    height: 200px;
+    height: 150px;
     border-radius: 150px;
 
 }
 
 .services{
-    background-color: black;
+    background-color: #191919;
     color: white;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   
 
 }
@@ -130,13 +133,13 @@ padding-bottom: 100px;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(201, 172, 24, 0.2)),url('servicespotraits.jpg');
     height: 400px;
     padding: 90px;
-   
+   background-size: cover;
 }
 #firstServicesCol{
     background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0,0.2)),url('servicesvid.webp');
     height: 400px;
     padding: 90px;
-    
+    background-size: cover;
    
 }
 .portfolio-section{
@@ -172,7 +175,7 @@ padding-bottom: 100px;
 
 
 .reviews-section{
-    background-color: #191919;
+    background-color:#212529;
     color: white;
     padding-top: 50px;
 }
@@ -185,7 +188,7 @@ padding-bottom: 100px;
     margin: 15px;
     padding: 30px;
     background-color: black;
-    border-radius: 20px;
+    
     
 }
 #client-image{
@@ -241,7 +244,7 @@ border-radius: 7px;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0, 0, 0, 0.7)),url('about-info.jpg');
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height:800px;
     color: white;
     padding-top: 100px;
 }
@@ -308,4 +311,189 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.6); /* Adjust the background color and opacity as needed */
     z-index: -1;
+}
+
+
+#services-main{
+    background-color: #191919;
+}
+
+.banner-inquire{
+    background-color: #191919;
+}
+
+.get-a-quote{
+    background-color: #191919;
+    color: white;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.get-a-quote textarea,input{
+    width: 100%;
+
+}
+#inquire-form-button{
+    padding: 5px;
+    background-color: white;
+    border-radius: 7px;
+    border: 2px solid white;
+}
+
+
+
+.contact{
+    background-color: #191919;
+    color: white;
+
+}
+
+.map{
+    background-color:#191919;
+
+}
+
+#map-wrap{
+    background-color: black;
+}
+
+#first-col-contact{
+    background-color:black;
+}
+/* 
+#second-col-contact{
+    background-image:url('contact.jpg'); 
+    background-size: cover;
+} */
+
+
+
+    #inquire-form-button {
+        background-color: #191919;
+        color: white;
+        border: 1px solid white;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+  
+
+.display{
+    background-color: black;
+    padding: 40px;
+}
+
+.display h1{
+    color: white;
+}
+
+
+
+.display {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  #portfolio-display {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    padding: 20px;
+   
+    text-align: center;
+    transition: opacity 0.4s ease;
+  }
+  
+  #portfolio-display:hover .overlay {
+    opacity: 1;
+  }
+  
+  #portfolio-display img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: filter 0.4s ease;
+  }
+  
+  #portfolio-display:hover img {
+    filter: brightness(50%) contrast(120%);
+    transform: scale(1.009);
+  }
+  .overlay h1 {
+    font-size: 50px;
+  }
+
+  #portfolio-heading{
+    font-size: 70px;
+    text-align: center;
+  }
+  .wedding-gallery {
+    background-color: black;
+  }
+.portrait-gallery{
+background-color: black;
+}
+.maternity-gallery{
+    background-color: black;
+}
+  .wedding-gallery h1{
+    color: white;
+  }
+
+  #goBack-button{
+    color: white;
+    text-decoration: none;
+  }
+
+  .navbar {
+    background-color: transparent !important; /* Transparent background for the navbar */
+  }
+  .navbar-toggler {
+    border-color: white; /* Border color for the hamburger icon */
+  }
+  .navbar-toggler-icon {
+    background-color: white; /* Color for the hamburger icon */
+  }
+  .navbar-nav .nav-link {
+    color: white; /* Color for the links in the toggle menu */
+  }
+
+
+
+  .contuedo{
+    width: 450px;
+}
+
+.carousel{
+    display: grid;
+    grid-auto-flow: column;
+    scroll-behavior: auto;
+    gap: 1.2rem;
+    overflow-y:auto ;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+
+}
+#slider-img{
+    scroll-snap-align: start;
+    border-radius:30px ;
+    min-height: 200px;
+    min-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel::-webkit-scrollbar{
+    display: none;
 }
